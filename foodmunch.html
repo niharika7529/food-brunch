@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>food munch</title>
+  <link rel="stylesheet" href="foodmunch.css">
+<link rel="stylesheet" href="foodfooter.css">
+
+</head>
+
+<body>
+
+  <!-- ------NAVIGATION BAR----- -->
+  <div class="navbar">
+    <div class="logo">F<snap style="color: orange;">oo</snap>d Br<span style="color: orange;">un</span>chhh</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">place order</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- -------CAROUSAL----- -->
+
+  <div class="carousel-container">
+    <div class="carousel-slide active">
+      <img src="img1.jpg" alt="Slide 1">
+      <div class="carousel-text">
+        <h1 id="head">Welcome to Our brunch!</h1>
+        <h2 style="padding-left: 5PX;">Enjoy Our Delicious Meal </h2>
+        <p style="font-size: 20px; color:forestgreen;">Get the best food items at the best prices. Don't miss out!</p>
+
+        <button class="order-button">Order Now</button>
+        <button class="order-button">addto cart</button>
+
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img22.webp" alt="Slide 2">
+      <div class="carousel-text">
+        <h1>A huge variety of dishes!</h1>
+        <p>check out the menu for more delicious desserts...</p><br>
+        <button class="order-button">Order Now</button>
+        <button class="order-button">addto cart</button>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="img33.png" alt="Slide 3">
+      <div class="carousel-text">
+        <h1>Chicken Dum Biryaniii!</h1>
+        <p>Get the best products at the best prices. Don't miss out!</p>
+        <button class="order-button">Order Now</button>
+        <button class="order-button">addto cart</button>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (index + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(() => {
+      showSlide(currentSlide + 1);
+    }, 3000);
+  </script>
+
+    <!-- -----second--- -->
+      <h2 class="header"><span style="color: brown;">How</span> <span style="color: orange;">It</span><span style="color: brown;">Works</span> </h2>
+      <div class="second">
+     <div class="purse">
+        <div class="content">
+          <h1>Best Quality</h1>
+            <h5 id="txt"> we provide the best quality of food,made by famouss chefs and freshly,
+              cooked and preapred will be served .everydy is a fresh cooking procees as no wastage of food is not being alloed</h5>
+        </div>
+    </div>
+    <div class="purse">
+      <div class="content">
+        <h1>Easy Order</h1>
+          <h5 id="txt">Go to the food brunch website ,explore menu make by just sudcribing 
+            to uour websiteOur website is designed to make your experience as smooth as possible.
+            You can browse through our menu, select the items you want to order, and</h5>
+      </div>
+  </div>
+  
+      <div class="purse">
+        <div class="content">
+            <h1>Fast Delivery</h1>
+            <h5 id="txt">the food will be reached to home with in no time ,to serve the customers with very
+              hot and fresh food is our moto.pay online or through our mobile app. We also offer a variety of payment options</h5>
+        </div>
+    </div>
+      </div>
+        
+   
+    
+
+   <!-- -----items---- -->
+     
+  <h1 class="h1"><span style="color: orange;">SPECIAL</span> BIRYANI'S</h1>
+  <p>"Eating biryani is a fun way to try foods from different cultures" </p>
+  <div class="items">
+
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\egg biryani.jpg" alt="Food Item 1">
+      <h2>Egg Biryani</h2>
+      <p>$150 single</p>
+      <button class="item-order-button">Order Now</button>
+
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\fish biryani.jpg" alt="Food Item 2">
+      <h2>Fish Biryani</h2>
+      <p>$300 platee</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\chicken biryani.jpg" alt="Food Item 3">
+      <h2>Chicken Biryani</h2>
+      <p>$200 single</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\Mushroom-biryani.jpg" alt="Food Item 1">
+      <h2>Mushroombiryani</h2>
+      <p>$250 platee</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\muttonbiryani.jpg" alt="Food Item 2">
+      <h2>mutton Biryani</h2>
+      <p>$350 single</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\kunda.jpg" alt="Food Item 3">
+      <h2>Kunda Biryani</h2>
+      <p>$500 one person</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+  </div>
+
+
+  <!-- ---list2-- -->
+  <h1 class="h1">SW<span style="color: orange;">ee</span>TS DES<span style="color:orange;">ee</span>RTS</h1>
+  <p>"Dessert is the sweetest way to end a meal and start the day."</p>
+
+  <div class="items2">
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\icecream.jpg" alt="Food Item 1">
+      <h2>ice cream stock</h2>
+      <p>$150 cup</p>
+      <button class="item-order-button">Order Now</button>
+
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\pancake.jpg" alt="Food Item 2">
+      <h2>Pancake</h2>
+      <p>$100 each</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\shahi-gulab-jamun1.jpg" alt="Food Item 3">
+      <h2>gulan jamun</h2>
+      <p>$200 cup</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\rasmalai.jpg" alt="Food Item 1">
+      <h2>rasmalai</h2>
+      <p>$150 cup</p>
+      <button class="item-order-button">Order Now</button>
+
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\decadent choco.jpg" alt="Food Item 2">
+      <h2>decadent choco</h2>
+      <p>$300 each</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+    <div class="card">
+      <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\oreio.jpg" alt="Food Item 3">
+      <h2>oreoi cake</h2>
+      <p>$200 single</p>
+      <button class="item-order-button">Order Now</button>
+    </div>
+  </div><br><br>
+
+  <!-- ----fast delivery--- -->/
+  <div class="delivery">
+    <img src="C:\Users\Lenovo\Desktop\FSD BATCH\js assignment\images\finalimg.jpeg" />
+    <div class="para">
+      <h1>FAST & FREE<br>
+        Delivery
+      </h1>
+
+      <p>
+        
+        the food will be reached to home with in no time ,to serve the customers hot and fresh food is our moto.
+        It is crucial to keep customers informed about the status of their deliveries to ensure a positive customer
+        experience.
+       </p>
+    </div>
+
+  </div><br><br>
+
+  <!-- -----footer----- -->
+ 
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h2 style="color: orangered;">F<snap style="color: orange;">oo</snap>d Br<span style="color: orange;">un</span>chhh</h2>
+          <p id="foot">
+           enjoy the food,place your order @foofbrunchh,enjoy the delicious foodd
+          </p><br>
+         contact us:
+           +91 123456789
+           +91 987654321
+        
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li><a href="#faq">about us</a></li>
+            <li><a href="#cookies-policy">our services</a></li>
+            <li><a href="#terms-of-services">Terms Of Service</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class=”column links”>
+          <h3>Some Links</h3>
+          <ul>
+            <li><a href="#faq">contact us/a></li>
+            <li><a href="#cookies-policy">Cookies Policy</a></li>
+            <li><a href="#terms-of-services">payment options</a></li>
+            <li><a href="#support">Support</a></li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>subcription</h3>
+          <div>
+            <input id="b" type="email" placeholder="Your email id here" /><br>
+            <button id="b">Subscribe</button>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+</body>
+
+</html>
